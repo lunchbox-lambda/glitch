@@ -16,7 +16,7 @@
     "node": "9.x"
   },
   "dependencies": {
-    "@lunchbox/landing": "^1.0.0-beta.1",
+    "@lunchbox/landing": "^1.0.0-beta.2",
     "express": "^4.16.2"
   }
 }
