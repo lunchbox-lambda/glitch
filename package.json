@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
