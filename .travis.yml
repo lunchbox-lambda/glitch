@@ -1,0 +1,10 @@
+sudo: false
+
+language: node_js
+
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  on:
+    tags: true
+    condition: $TRAVIS_TAG =~ ^[0-9.]+
