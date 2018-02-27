@@ -16,15 +16,13 @@ const redirect = (req, res, next) => {
   else next()
 }
 
+const fallback = (req, res) => {
+  res.sendFile(path.resolve(publicPath, 'index.html'))
+}
+
 app.use(redirect)
 app.use(compression())
 app.use(express.static(publicPath))
+app.use(fallback)
 
-app.use('/*', (req, res) => {
-  res.sendFile(path.resolve(publicPath, 'index.html'))
-})
-
-
-const listener = app.listen(process.env.PORT, () => {
-  console.log('Listening on port ' + listener.address().port)
-})
+app.listen(process.env.PORT)
