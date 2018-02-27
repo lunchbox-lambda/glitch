@@ -6,6 +6,17 @@ const app = express()
 const basePath = 'node_modules/@lunchbox/landing/dist'
 const publicPath = path.resolve(__dirname, basePath)
 
+const redirect = (req, res, next) => {
+  const protoHeader = req.headers['x-forwarded-proto']
+  const protoArray = protoHeader.split(',')
+  const originalProtocol = protoArray[0]
+
+  if (originalProtocol === 'http')
+    res.redirect(301, `https://${req.headers.host}${req.url}`)
+  else next()
+}
+
+app.use(redirect)
 app.use(compression())
 app.use(express.static(publicPath))
 
