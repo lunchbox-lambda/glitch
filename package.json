@@ -1,6 +1,6 @@
 {
   "name": "@lunchbox/glitch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Lunchbox Glitch",
   "author": "Zoltan Ujvary",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "node": "9.x"
   },
   "dependencies": {
-    "@lunchbox/landing": "^1.0.0-beta.2",
+    "@lunchbox/landing": "^1.0.0-beta.3",
     "compression": "^1.7.2",
     "express": "^4.16.2"
   }
