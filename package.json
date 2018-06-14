@@ -1,5 +1,5 @@
 {
-  "name": "@lunchbox/glitch",
+  "name": "@lunchbox-lambda/glitch",
   "version": "1.0.7",
   "description": "Lunchbox Glitch",
   "author": "Zoltan Ujvary",
@@ -11,13 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ujvzolee/lunchbox-glitch.git"
+    "url": "https://github.com/lunchbox-lambda/glitch.git"
   },
   "engines": {
     "node": "9.x"
   },
   "dependencies": {
-    "@lunchbox/landing": "^1.0.0-beta.3",
     "compression": "^1.7.2",
     "express": "^4.16.2"
   }
